@@ -1,0 +1,34 @@
+{
+  "name": "firefox-location",
+  "version": "1.0.0",
+  "description": "Approximates the current location of Mozilla Firefox on your system.",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "test -f $(node -pe 'require(\"./\")') && echo found firefox"
+  },
+  "author": {
+    "name": "Hugh Kennedy",
+    "email": "hughskennedy@gmail.com",
+    "url": "http://hughsk.io/"
+  },
+  "dependencies": {
+    "userhome": "^1.0.0",
+    "which": "^1.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/firefox-location.git"
+  },
+  "keywords": [
+    "firefox",
+    "spawn",
+    "location",
+    "process",
+    "guesstimate"
+  ],
+  "homepage": "https://github.com/hughsk/firefox-location",
+  "bugs": {
+    "url": "https://github.com/hughsk/firefox-location/issues"
+  }
+}
