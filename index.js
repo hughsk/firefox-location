@@ -4,7 +4,12 @@ var other = !osx && !win
 var fs    = require('fs')
 
 if (other) {
-  module.exports = require('which').sync('firefox')
+  try {
+    module.exports = require('which').sync('firefox')
+  } catch (_) {
+    module.exports = null
+  }
+
 } else
 if (osx) {
   var regPath = '/Applications/Firefox.app/Contents/MacOS/firefox'
@@ -28,4 +33,6 @@ if (osx) {
       break
     }
   }
+
+  module.exports = module.exports || null
 }
