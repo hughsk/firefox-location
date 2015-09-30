@@ -26,6 +26,6 @@ if (osx) {
     , process.env['PROGRAMFILES(X86)']
   ].reduce(function (existing, prefix) {
     var exe = prefix + suffix
-    return existing || fs.existsSync(exe) ? exe : null
+    return existing || (fs.existsSync(exe) ? exe : null)
   }, null)
 }
