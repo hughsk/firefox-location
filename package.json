@@ -1,6 +1,6 @@
 {
   "name": "firefox-location",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Approximates the current location of Mozilla Firefox on your system.",
   "main": "index.js",
   "license": "MIT",
